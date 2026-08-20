@@ -1,9 +1,9 @@
 ﻿@page
 @model MyFirstRazorProject.Pages.Students.IndexModel
 @{
-    <h1>Student List</h1>
+   
     <p>
-    <a class="btn btn-success" asp-asp-page="./Create">Add New Student</a>
+        <a class="btn btn-success" asp-asp-page="./Create">Student List</a>
     </p>
 
     <table class="table table-bordered table-striped">
@@ -45,7 +45,7 @@
                             
                         </td>
                         <td>
-                        <a href="Student/Edit?id=@item.StudentId" class="btn btn-primary">Edit</a>
+                        <a href="Students/Edit?id=@item.StudentId" class="btn btn-primary">Edit</a>
                       
                         <form method="post" asp-page="./Index" asp-page-handler="Delete">
 
